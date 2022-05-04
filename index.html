@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn: Log In or Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav1.jpeg">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="toggleMenu" id="toggleMenu">
+                <span class="material-symbols-outlined">menu</span>Menu
+            </div>
+            <a href="#" class="nav__logo-link"><img src="./images/linkedinL.png" alt="" class="main-logo"
+                    width="130px"></a>
+            <ul class="nav__menu" id="nav__menu">
+                <li><a href="#" class="nav__link"><span class="material-symbols-outlined nav__link-icon">
+                            explore
+                        </span><span class="nav__link-text">Discover</span></a></li>
+                <li><a href="#" class="nav__link"><span class="material-symbols-outlined nav__link-icon">
+                            group
+                        </span><span class="nav__link-text">People</span></a></li>
+                <li><a href="#" class="nav__link"><span class="material-symbols-outlined nav__link-icon">
+                            local_library
+                        </span><span class="nav__link-text">Learning</span></a></li>
+                <li><a href="#" class="nav__link"><span class="material-symbols-outlined nav__link-icon">
+                            business_center
+                        </span><span class="nav__link-text">Jobs</span></a></li>
+            </ul>
+            <div class="header__cta-wrapper">
+                <a href="./sign-up.html" class="nav__signup-btn">Join now</a>
+                <a href="./sign-in.html" class="nav__signin-btn">Sign in</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="section__welcome-container">
+                <h1 class="section__title">Welcome to your professional community</h1>
+                <div class="sign-in-form-container">
+                    <form class="sign-in-form hero-cta">
+                        <div class="sign-in-form__form-input-container">
+                            <input class="input__input" type="email" name="email" id="email"
+                                placeholder="Email or phone number" required>
+                            <input class="input__input" type="password" name="password" id="password"
+                                placeholder="Password" required autocomplete="current-password">
+                        </div>
+                        <a href="#" class="sign-in-form__forgot-password">Forgot password?</a>
+                        <p class="form__agreement">By clicking Sign up, you agree to our <a href="#">User Agreement,</a> <a
+                            href="#">Privacy Policy</a>,
+                        and
+                        <a href="#">Cookie Policy</a>
+                    </p>
+                        <button id="btn" class="form__btn">Sign in</button>
+                        <button id="btn" class="form__btn agree">Agree & Join</button>
+                        <p class="form__registeration-option option1">or</p>
+                        <p class="form__registeration-option already"> <a href="./sign-in.html">Already on LinkedIn?</a></p>
+                        <button class="form__google-registeration">
+                            <a href="#">
+                                <img src="./images/glogo.png" alt=""> <span>Sign in with Google</span>
+                            </a>
+                        </button>
+                        <button id="btn" class="form__btn btn-sec">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <img src="./images/banner.svg" alt="" class="section__banner-img">
+        </section>
+        <div class="explore">
+            <section class="section">
+                <h2 class="section__sec-title">Explore topics you are insterested in</h2>
+                <nav class="section__menu">
+                    <h3 class="section__sec-header">Content Topics</h3>
+                    <div class="section__main-links-container">
+                        <ul class="section__main-links">
+                            <li><a href="#" class="section__link-items transparent">See All Topics</a></li>
+                            <li><a href="#" class="section__link-items">Science and Environment</a></li>
+                            <li><a href="#" class="section__link-items">Marketing and Advertising</a></li>
+                            <li><a href="#" class="section__link-items">Sales and Retail</a></li>
+                            <li><a href="#" class="section__link-items">Technology</a></li>
+                            <li><a href="#" class="section__link-items">Finance and Economy</a></li>
+                            <li><a href="#" class="section__link-items">Health</a></li>
+                            <li><a href="#" class="section__link-items">Business and Management</a></li>
+                            <div class="hidden" id="hidden">
+                                <li><a href="#" class="section__link-items ">Lifestyle and Leisure</a></li>
+                                <li><a href="#" class="section__link-items ">Society and Culture</a></li>
+                                <li><a href="#" class="section__link-items ">Arts and Entertainment</a></li>
+                                <li><a href="#" class="section__link-items ">Education and Learning</a></li>
+                                <li><a href="#" class="section__link-items ">Sports and Fitness</a></li>
+                                <li><a href="#" class="section__link-items ">Careers and Employment</a></li>
+                            </div>
+                        </ul>
+                        <button class="section__show-more" id="btn-prim" onclick="handleClick()">Show more<span
+                                class="material-symbols-outlined">
+                                expand_more
+                            </span></button>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <section class="section">
+            <h2 class="section__sec-title">Find the right job or internship for you</h2>
+            <nav class="section__menu">
+                <h3 class="section__sec-header">Suggested Searches</h3>
+                <div class="section__main-links-container">
+                    <ul class="section__main-links">
+                        <li><a href="#" class="section__link-items">Engineering</a></li>
+                        <li><a href="#" class="section__link-items">Business Development</a></li>
+                        <li><a href="#" class="section__link-items">Finance</a></li>
+                        <li><a href="#" class="section__link-items">Administrative Assistant</a></li>
+                        <li><a href="#" class="section__link-items">Retail Associate</a></li>
+                        <li><a href="#" class="section__link-items">Customer Service</a></li>
+                        <li><a href="#" class="section__link-items">Operations</a></li>
+                        <li><a href="#" class="section__link-items">Information Technology</a></li>
+                        <li><a href="#" class="section__link-items">Marketing</a></li>
+                        <li><a href="#" class="section__link-items">Human Resourses</a></li>
+                        <li><a href="#" class="section__link-items">Healthcare Services</a></li>
+                        <div class='hidden-two' id="hidden-two">
+                            <li><a href="#" class="section__link-items ">Accounting</a></li>
+                            <li><a href="#" class="section__link-items ">Sales</a></li>
+                            <li><a href="#" class="section__link-items ">Program and Project Management</a></li>
+                            <li><a href="#" class="section__link-items ">Accounting</a></li>
+                            <li><a href="#" class="section__link-items ">Arts and Design</a></li>
+                            <li><a href="#" class="section__link-items ">Community and Social Services</a></li>
+                            <li><a href="#" class="section__link-items ">Consulting</a></li>
+                            <li><a href="#" class="section__link-items ">Education</a></li>
+                            <li><a href="#" class="section__link-items ">Entrepreneurship</a></li>
+                            <li><a href="#" class="section__link-items ">Legal</a></li>
+                            <li><a href="#" class="section__link-items ">Media and Communications</a></li>
+                            <li><a href="#" class="section__link-items ">Military and Protective Services</a></li>
+                            <li><a href="#" class="section__link-items ">Product Management</a></li>
+                            <li><a href="#" class="section__link-items ">Purchasing</a></li>
+                            <li><a href="#" class="section__link-items ">Quality Assurance</a></li>
+                            <li><a href="#" class="section__link-items ">Real Estate</a></li>
+                            <li><a href="#" class="section__link-items ">Research</a></li>
+                            <li><a href="#" class="section__link-items ">Support</a></li>
+                            <li><a href="#" class="section__link-items ">Administrative</a></li>
+                        </div>
+                    </ul>
+                    <button class="section__show-more" id="btn-sec" onclick="showMore()">Show more<span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+            </nav>
+        </section>
+        <div class="section p-explore"></div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>

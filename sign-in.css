@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.form__header-logo{
+    width: 130px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+
+}
+.form {
+    padding: 0 15px;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.6);
+    border-radius: 8px;
+    width: 350px;
+}
+.form__header{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.form__header-title {
+    font-size: 30px;
+    color: #333;
+    margin-top: 1px;
+}
+.form__header-text{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.input__input{
+    width: 100%;
+    background: #fff;
+    position: relative;
+    margin-top: 12px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.9);
+    height: 48%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 12px;
+    outline: none;
+}
+.sign-in-form__forgot-password{
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    display: inline-block;
+    margin: 16px 0 24px 0;
+}
+.sign-in-form__forgot-password:hover{
+    cursor: pointer;
+    color: #0a66c2;
+    text-decoration: underline;
+}
+.form__btn{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: #2977c9;
+    height: 52px;
+    border-radius: 24px;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.form__btn:hover {
+    background-color: #0073b1;
+    transition: ease-in 1s;
+}
+.form__registeration-option {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin:15px 0 15px 0;
+}
+
+.form__registeration-option::before,
+.form__registeration-option::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.form__registeration-option:not(:empty)::before {
+    margin-right: 24px;
+}
+
+.form__registeration-option:not(:empty)::after {
+    margin-left: 24px;
+}
+
+.form__google-registeration {
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+    width: 100%;
+    margin: 15px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.form__google-registeration a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #666;
+}
+
+.form__google-registeration a span {
+    padding-left: 8px;
+}
+
+.form__google-registeration:hover {
+    background-color: #fff;
+    outline: 1px solid #000;
+
+}
+.form__google-registeration img {
+    width: 20px;
+}
+.apple{
+    margin-top: -10px;
+}
+.form__google-registeration .apple-logo{
+    width: 40px;
+}
+.form__sign-up{
+    margin: 16px 0 24px 0;
+}
+.form__sign-up a{
+    text-decoration: none;
+    padding: 8px;
+    color:#0073b1;
+    font-size: 17px;
+    font-weight: 600;
+}
+.form__sign-up a:hover{
+    cursor: pointer;
+    background-color: #d6f0ee;
+    border-radius: 24px;
+}
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.footer__nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1128px;
+    margin: 0 auto;
+}
+
+.footer__logo-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 60px;
+    padding-right: 6px;
+}
+
+.footer span {
+    font-size: 12px;
+    color: #888;
+    padding-right: 8px;
+}
+
+.link-items a {
+    color: #555;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.link-items a:hover {
+    cursor: pointer;
+    color: #0073cf;
+    text-decoration: underline;
+}
