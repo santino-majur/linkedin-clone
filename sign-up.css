@@ -228,3 +228,60 @@ a:hover {
     color: #0073cf;
     text-decoration: underline;
 }
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .form__header-title{
+        text-align: center;
+        font-size: 30px;
+        width: 80%;
+        color: #000;
+        line-height: 1.4;
+        padding: 24px 16px;
+    }
+    .form__container{
+        width: auto;
+        background: transparent;
+        max-width: 600px;
+        padding-top: 0;
+    }
+    .form__agreement{
+        width: 100%;
+        margin: 12px 0 0;
+    }
+    .form__registeration-option{
+        display: none;
+    }
+    .form__google-registeration{
+        margin-top: 10px;
+    }
+    .footer{
+        margin-top: 0;
+        background-color: #fff;
+    }
+    .footer__nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer__nav-links{
+       width: 90%;
+       flex-direction: row;
+       padding: 24px 16px;
+       align-items: center;
+       justify-content: flex-start;
+       min-height: 50px;
+       margin: 0 auto;
+    }
+    .footer__logo-copyright{
+        justify-content: start;
+    }
+    .link-items{
+        width: 50%;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+}
