@@ -193,11 +193,13 @@ a:hover {
 
 .footer__nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     width: 1128px;
     margin: 0 auto;
+    min-height: 50px;
+    height: auto;
 }
 
 .footer__logo-copyright {
@@ -228,7 +230,7 @@ a:hover {
     color: #0073cf;
     text-decoration: underline;
 }
-@media (max-width: 600px) {
+@media (max-width: 769px) {
     .container{
         width: 100%;
     }
@@ -283,5 +285,14 @@ a:hover {
         width: 50%;
         align-items: center;
         margin-bottom: 16px;
+    }
+}
+@media (max-width: 1161px) and (min-width: 769px){
+    .footer__nav-links{
+        width: 100%;
+        align-items: center;
+        padding: 0 16px;
+        flex-direction: row;
+        gap: 8px;
     }
 }

@@ -8,8 +8,13 @@ body{
 .header{
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    max-width: 1128px;
     margin: auto;
+}
+.header a{
+    display: block;
+    margin: 12px 0 0 56px;
 }
 .form__header-logo{
     width: 130px;

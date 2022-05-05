@@ -10,6 +10,9 @@ body {
 
 .header {
     margin-bottom: 30px;
+    max-width: 1128px;
+    margin: auto;
+    width: 100%;
 }
 
 .nav {
@@ -117,6 +120,8 @@ body {
 
 .main {
     overflow: hidden;
+    max-width: 1128px;
+    margin: 0 auto;
 }
 
 .explore {
@@ -229,7 +234,9 @@ body {
 .agree{
     display: none;
 }
-
+.btn-sec{
+    display: none;
+}
 .form__registeration-option {
     display: flex;
     align-items: center;
@@ -391,35 +398,45 @@ body {
     background: radial-gradient(circle, rgba(186, 186, 186, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(249, 251, 251, 1) 100%);
 }
 
-@media (max-width: 600px) {
+@media (max-width:  769px) and (min-width: 320px){
     .header{
         margin-bottom: 0;
     }
     .nav {
-        width: 90%;
+        width: 100%;
         margin-bottom: 0;
+        padding: 0 10px;
     }
 
     .toggleMenu {
         display: flex;
-        width: 30%;
+        min-width: 65px;
+        flex: 1;
+        font-size: 15px;
+        order: 1;
     }
 
     .nav__logo-link {
-        width: 30%;
+        width: 65px;
+        flex: 1;
+        order: 2;
     }
     .nav__menu{
         display: none;
     }
-
+    .main__logo{
+        width: 101px;
+    }
     .header__cta-wrapper {
-        width: 30%;
+        width: 65px;
+        flex: 2;
+        order: 3;
     }
     .nav__signin-btn{
         display: none;
     }
     .nav__signup-btn {
-        font-size: 18px;
+        font-size: 16px;
         border: 1px solid #0a66c2;
         color: #0a66c2;
         font-weight: 500;
@@ -485,20 +502,78 @@ body {
         height: auto;
     }
     .section__sec-title{
-        font-size: 31px;
-        width: 90%;
+        font-size: 29px;
+        width: 100%;
         margin: 0 auto;
         padding-top: 45px;
         padding-bottom: 20px;
+        padding: 45px 16px 20px 16px;
     }
     .section__menu{
-        width: 90%;
-        margin: 0 auto;
-    }
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;    }
     .section__main-links-container{
-        width: 90%;
+        width: 100%;
     }
     .section__show-more{
         width: 40%;
+    }
+}
+@media (max-width: 1161px) and (min-width: 769px){
+    .nav{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main__logo{
+        width: 102px;
+    }
+    .nav__menu{
+        min-width: 300px;
+    }
+    .nav__link{
+        min-height: 47px;
+    }
+    .header__cta-wrapper{
+        width: 180px;
+        gap: 1px;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+    }
+    .nav__signup-btn{
+        font-size: 15px;
+    }
+    .nav__signin-btn{
+        height: 30px;
+    }
+    .main{
+        max-width: 1128px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .section-row{
+        flex-direction: row;
+    }
+    .btn-sec{
+        display: none;
+    }
+    .section__sec-title{
+        width: 100%;
+        padding-top: 50px;
+        margin-bottom: 24px;
+    }
+    .explore{
+        max-width: 2550px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
